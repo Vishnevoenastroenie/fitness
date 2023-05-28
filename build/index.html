@@ -45,18 +45,18 @@
           <div class="header__content">
             <ul class="list-reset">
               <li>
-                <a href="#">Тренажёрный зал</a>
+                <a class="oll-links" href="#">Тренажёрный зал</a>
               </li>
               <li>
-                <a href="#">Групповые занятия</a>
+                <a class="oll-links" href="#">Групповые занятия</a>
               </li>
               <li>
-                <a href="#">Кардио-зона</a>
+                <a class="oll-links" href="#">Кардио-зона</a>
               </li>
             </ul>
             <span>Омск</span>
             <h1>Фитнес центр</h1>
-            <a class="btn" href="#tariffs">Купить абонемент</a>
+            <a class="header__btn btn" type="button" href="#tariffs">Купить абонемент</a>
           </div>
           <div class="header__image">
             <picture>
@@ -90,8 +90,8 @@
                   <img src="./img/about-image.jpg" srcset="./img/about-image@2x.jpg 2x" width="660" height="401" alt="Фото тренажёрного зала." loading="lazy">
                 </picture>
               </div>
-              <div class="about__video">
-                <a class="about__video" href="https://www.youtube.com/watch?v=9TZXsZItgdw">
+              <div class="about__video about__video-js">
+                <a class="about__video-link" href="https://www.youtube.com/watch?v=9TZXsZItgdw" target="_blank">
                   <div class="about__video-preview">
                     <picture>
                       <source type="image/webp" media="(max-width: 767px)" srcset="./img/video-preview-mobile.webp 1x, ./img/video-preview-mobile@2x.webp 2x">
@@ -108,7 +108,8 @@
                     <path d="M13 7.5L0.249999 14.8612L0.25 0.138783L13 7.5Z" fill="white" />
                   </svg>
                 </button>
-                <!--<div class="about__video-container" href="https://www.youtube.com/embed/9TZXsZItgdw?autoplay=1"> </div>-->
+                <div class="about__video-container" data-video-container data-src="https://www.youtube.com/embed/9TZXsZItgdw?autoplay=1">
+                </div>
               </div>
             </div>
           </div>

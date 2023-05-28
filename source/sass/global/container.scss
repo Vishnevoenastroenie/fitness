@@ -1,8 +1,6 @@
-.container {
-  @include vp-767 {
-    padding: 0 15px;
-  }
+@import "../variables";
 
+.container {
   width: 100%;
   max-width: 1366px;
   margin: 0 auto;
@@ -10,5 +8,9 @@
 
   @media (max-width: $tablet-size-max) {
     padding: 0 45px;
+  }
+
+  @media (max-width: $mobile-size-max) {
+    padding: 0 15px;
   }
 }

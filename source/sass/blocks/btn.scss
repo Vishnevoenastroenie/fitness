@@ -15,7 +15,7 @@
   text-transform: uppercase;
   letter-spacing: 0.05em;
 
-  background-color: $color-neon-blue;
+  background-color: $color-transparent;
   border: none;
   cursor: pointer;
 
@@ -23,7 +23,7 @@
 
   user-select: none;
 
-  &--red {
+  &-- {
     background-color: $color-torch-red;
   }
 
