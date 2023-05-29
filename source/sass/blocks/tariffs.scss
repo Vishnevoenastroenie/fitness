@@ -18,7 +18,7 @@
     background-size: cover;
     transform: rotate(150deg);
 
-    @media (min-width: 1366px) {
+    @media (min-width: 1200px) {
       background-image: url("./../img/tariffs.png");
 
       @supports (background-image: url("./../img/tariffs.webp")) {
@@ -40,20 +40,20 @@
       width: 289px;
       height: 345px;
 
-      background-image: url("./../img/tariffs-tablet.png");
+      background-image: url("./../img/tariffs.png");
 
-      @supports (background-image: url("./../img/tariffs-tablet.webp")) {
+      @supports (background-image: url("./../img/tariffs.webp")) {
         background: width 100%;
-        background-image: url("./../img/tariffs-tablet.webp");
+        background-image: url("./../img/tariffs.webp");
       }
 
       @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
         background: width 100%;
-        background-image: url("./../img/tariffs-tablet@2x.jpg");
+        background-image: url("./../img/tariffs@2x.jpg");
 
-        @supports (background-image: url("./../img/tariffs-tablet@2x.webp")) {
+        @supports (background-image: url("./../img/tariffs@2x.webp")) {
           background: width 100%;
-          background-image: url("./../img/tariffs-tablet@2x.webp");
+          background-image: url("./../img/tariffs@2x.webp");
         }
       }
     }
@@ -77,12 +77,12 @@
 
   @media (max-width: $tablet-size-max) {
     margin-bottom: 75px;
-    padding: 104px 163px 100px;
+    padding: 100px 163px 100px;
   }
 
   @media (max-width: $mobile-size-max) {
     margin-bottom: 0;
-    padding: 70px 15px;
+    padding: 64px 15px 67px;
   }
 }
 
@@ -181,7 +181,7 @@
   }
 }
 
-.tariffs.is-active .tabs__control {
+.tariffs.is-active .tabs__control button {
   color: $color-sapphire;
 
   &::before {

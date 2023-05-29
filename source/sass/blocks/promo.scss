@@ -2,21 +2,21 @@
 
 .promo__container {
   display: grid;
-  padding-top: 122px;
+  padding-top: 26px;
   padding-bottom: 106px;
 
   grid-template-columns: 1fr minmax(500px, 660px);
 
   @media (max-width: $tablet-size-max) {
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding-top: 25px;
+    padding-bottom: 50px;
 
     grid-template-columns: 1fr 386px;
   }
 
   @media (max-width: $mobile-size-max) {
     padding-top: 72px;
-    padding-bottom: 64px;
+    padding-bottom: 50px;
 
     grid-template-columns: 1fr;
   }
