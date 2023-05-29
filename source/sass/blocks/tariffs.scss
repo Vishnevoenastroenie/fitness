@@ -346,8 +346,7 @@
   background-color: $color-default-white;
   border: 7px solid $color-default-white;
 
-  &:hover,
-  &:focus {
+  &:hover {
     border: 7px solid $color-transparent;
     border-image: $gr-tariffs-card;
     border-image-slice: 1;
@@ -358,6 +357,19 @@
       background: $gr-tariffs-btn;
       border: 0;
       outline: none;
+    }
+  }
+
+  &:focus {
+    border: 7px solid $color-transparent;
+    border-image: $gr-tariffs-card;
+    border-image-slice: 1;
+
+    .btn {
+      color: $color-default-white;
+
+      background: $gr-tariffs-btn;
+      outline: 2px solid $color-crimson;
     }
   }
 
@@ -383,8 +395,17 @@
   outline: 2px solid $color-resolution-blue;
   cursor: pointer;
 
-  &:hover,
-  &:focus {
+  &:hover {
+    color: $color-default-white;
+
+    background: $gr-tariffs-btn;
     outline: none;
+  }
+
+  &:focus {
+    color: $color-default-white;
+
+    background: $gr-tariffs-btn;
+    outline: 2px solid $color-crimson;
   }
 }

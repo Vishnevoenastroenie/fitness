@@ -4,6 +4,7 @@ import {Form} from './modules/form-validate/form';
 import './modules/play-video';
 import {initTabs} from './modules/init-tabs';
 import './modules/tabs';
+import {initCoachesSwiper} from './modules/coaches-slider';
 
 // ---------------------------------
 
@@ -25,6 +26,7 @@ window.addEventListener('DOMContentLoaded', () => {
     window.form = form;
     form.init();
     initTabs();
+    initCoachesSwiper();
   });
 });
 
