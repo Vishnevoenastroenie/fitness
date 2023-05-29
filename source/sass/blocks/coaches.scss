@@ -1,1 +1,274 @@
 @import "../variables";
+
+.coaches .container {
+  max-width: fit-content;
+  padding: 0 70px 90px;
+
+  @media (max-width: $tablet-size-max) {
+    padding-top: 51px;
+    padding-bottom: 100px;
+  }
+
+  @media (max-width: $mobile-size-max) {
+    padding: 15px 0 70px;
+  }
+}
+
+.coaches h2 {
+  margin-top: 0;
+  margin-bottom: 48px;
+
+  font-weight: 600;
+  font-size: 54px;
+  line-height: 65px;
+  font-family: $ff-alumni-sans;
+  letter-spacing: 0.03em;
+
+  @media (max-width: $tablet-size-max) {
+    margin-right: 5px;
+    margin-bottom: 31px;
+
+    font-size: 42px;
+    line-height: 50px;
+    text-align: center;
+  }
+
+  @media (max-width: $mobile-size-max) {
+    margin-bottom: 42px;
+
+    font-size: 32px;
+    line-height: 38px;
+  }
+}
+
+.coaches__swiper {
+  position: relative;
+
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  max-width: 1160px;
+  margin: 0 auto;
+
+  @media (max-width: 1319px) {
+    max-width: 860px;
+  }
+
+  @media (max-width: $tablet-size-max) {
+    width: 566px;
+
+    gap: 40px;
+  }
+
+  @media (max-width: $mobile-size-max) {
+    width: calc(100% - 47px * 2);
+    height: auto;
+    margin: 0 auto;
+  }
+}
+
+.coaches__swiper .swiper-button {
+  position: absolute;
+  top: 50%;
+
+  width: 47px;
+  height: 100%;
+  padding: 0;
+
+  background-color: transparent;
+  border: 0;
+  transform: translateY(-50%);
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    color: $color-resolution-blue;
+  }
+
+  &:active {
+    color: $color-sapphire;
+  }
+
+  & svg {
+    width: 18px;
+    height: 34px;
+
+    @media (max-width: $mobile-size-max) {
+      width: 10px;
+      height: 19px;
+    }
+  }
+}
+
+.coaches__swiper .swiper-button--prev {
+  left: -72px;
+
+  @media (max-width: $tablet-size-max) {
+    left: -72px;
+  }
+
+  @media (max-width: $mobile-size-max) {
+    left: -47px;
+  }
+}
+
+.coaches__swiper .swiper-button--next {
+  right: -69px;
+
+  @media (max-width: $tablet-size-max) {
+    right: -72px;
+  }
+
+  @media (max-width: $mobile-size-max) {
+    right: -47px;
+  }
+}
+
+.coaches__card {
+  position: relative;
+
+  height: 100%;
+  margin: 0;
+
+  @media (max-width: $mobile-size-max) {
+    width: calc(100% - 47px * 2);
+    height: auto;
+    margin: 0 auto;
+  }
+}
+
+.coaches__card:hover,
+.coaches__card:focus-visible {
+  outline: 0;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    box-shadow: 0 0 35px rgba(42, 59, 99, 0.17);
+  }
+
+  & .coaches__description {
+    transform: translateY(0);
+  }
+
+  & .coaches__image > span {
+    transform: translateY(-100%);
+  }
+}
+
+.coaches__image img {
+  width: 294px;
+  height: 294px;
+
+  user-select: none;
+
+  object-fit: cover;
+
+  @media (max-width: $tablet-size-max) {
+    width: 268px;
+  }
+
+  @media (max-width: $mobile-size-max) {
+    width: 100%;
+    height: auto;
+    min-height: 274px;
+    margin: 0 auto;
+  }
+}
+
+.coaches__image > span {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  padding: 22px;
+
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 150%;
+  color: $color-default-white;
+
+  transition: 0.3s transform;
+
+  user-select: none;
+
+  @media (max-width: $mobile-size-max) {
+    width: calc(100% - 40px * 2);
+    height: auto;
+    margin: 0 auto;
+    padding: 22px 0;
+  }
+}
+
+.coaches__description {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  padding: 52px 25px 20px 25px;
+  overflow: auto;
+
+  color: $color-default-white;
+
+  background-color: rgba(16, 38, 84, 0.89);
+  transform: translateY(100%);
+
+  transition: 0.3s transform;
+
+  @media (max-width: $tablet-size-max) {
+    padding: 52px 33px 20px 25px;
+  }
+
+  @media (max-width: $mobile-size-max) {
+    padding: 43px 25px 20px 25px;
+  }
+}
+
+.coaches__description h3 {
+  margin: 0;
+
+  font-size: 18px;
+  line-height: 135%;
+  text-align: center;
+}
+
+.coaches__description > p {
+  margin: 0;
+  margin-bottom: 30px;
+
+  font-size: 16px;
+  line-height: 150%;
+  text-align: center;
+}
+
+.coaches__description > ul {
+  margin: 0;
+  padding-left: 47px;
+
+  @media (max-width: $mobile-size-max) {
+    padding-left: 25px;
+  }
+}
+
+.coaches__description > ul p {
+  margin-top: 0;
+  margin-bottom: 11px;
+
+  font-size: 14px;
+  line-height: 150%;
+}
