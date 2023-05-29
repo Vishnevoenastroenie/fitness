@@ -3086,6 +3086,9 @@ button,
       -ms-user-select: none;
           user-select: none;
 }
+.tariffs .tabs__control:hover, .tariffs .tabs__control:focus {
+  color: #74819c;
+}
 @media (max-width: 1199px) {
   .tariffs .tabs__control {
     font-size: 18px;
@@ -3124,9 +3127,6 @@ button,
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin: 0;
-  padding: 0;
-  list-style: none;
   gap: 40px;
   -ms-grid-columns: 1fr 1fr 1fr;
   grid-template-columns: 1fr 1fr 1fr;
@@ -3272,44 +3272,36 @@ button,
           align-items: center;
   min-width: 360px;
   min-height: 448px;
-  padding: 57px 30px 67px;
+  padding: 53px 30px 59px;
   list-style: none;
   background-color: #ffffff;
+  border: 7px solid #ffffff;
+}
+.tariffs .tabs__element li:hover, .tariffs .tabs__element li:focus {
+  border: 7px solid rgba(255, 255, 255, 0);
+  -o-border-image: -o-linear-gradient(305deg, rgb(209, 10, 66) 0%, rgb(0, 53, 159) 100%);
+     border-image: linear-gradient(145deg, rgb(209, 10, 66) 0%, rgb(0, 53, 159) 100%);
+  border-image-slice: 1;
+}
+.tariffs .tabs__element li:hover .btn, .tariffs .tabs__element li:focus .btn {
+  color: #ffffff;
+  background: -o-linear-gradient(352.95deg, #ed0233 17.6%, #003eb7 95.31%);
+  background: linear-gradient(97.05deg, #ed0233 17.6%, #003eb7 95.31%);
+  border: 0;
+  outline: none;
 }
 @media (max-width: 1199px) {
   .tariffs .tabs__element li {
     min-height: 448px;
+    padding-top: 51px;
   }
 }
 @media (max-width: 767px) {
   .tariffs .tabs__element li {
     min-width: 100%;
     min-height: 384px;
-    padding: 50px 25px 55px;
+    padding: 45px 25px 47px;
   }
-}
-.tariffs .tabs__element li::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: -o-linear-gradient(315deg, transparent 0%, transparent 25%, transparent 45%, #d10a42 55%, #d10a42 60%, #00359f 100%);
-  background: linear-gradient(135deg, transparent 0%, transparent 25%, transparent 45%, #d10a42 55%, #d10a42 60%, #00359f 100%);
-  background-size: 400%;
-  -webkit-transition: background-position 0.25s linear;
-  -o-transition: background-position 0.25s linear;
-  transition: background-position 0.25s linear;
-}
-.tariffs .tabs__element li:hover::before, .tariffs .tabs__element li:focus::before {
-  background-position: 100%;
-}
-.tariffs .tabs__element li:hover .btn, .tariffs .tabs__element li:focus .btn {
-  color: #ffffff;
-}
-.tariffs .tabs__element li:hover .btn::before, .tariffs .tabs__element li:focus .btn::before {
-  background-position: 100%;
 }
 
 .tariffs .btn {
@@ -3317,19 +3309,11 @@ button,
   padding: 25px 46px;
   line-height: 16px;
   color: #102654;
-}
-.tariffs .btn::before {
-  background-image: -o-linear-gradient(352.95deg, #102654 0%, #102654 40%, #ed0233 72.53%, #003eb7 98.44%);
-  background-image: linear-gradient(97.05deg, #102654 0%, #102654 40%, #ed0233 72.53%, #003eb7 98.44%);
-  -webkit-transition: 0.3s -webkit-transform, 0.3s -webkit-clip-path;
-  transition: 0.3s -webkit-transform, 0.3s -webkit-clip-path;
-  -o-transition: 0.3s transform, 0.3s clip-path;
-  transition: 0.3s transform, 0.3s clip-path;
-  transition: 0.3s transform, 0.3s clip-path, 0.3s -webkit-transform, 0.3s -webkit-clip-path;
+  outline: 2px solid #1c3374;
+  cursor: pointer;
 }
 .tariffs .btn:hover, .tariffs .btn:focus {
-  outline: 2px solid #1c3374;
-  outline-offset: #ed0233;
+  outline: none;
 }
 
 .promo__container {
