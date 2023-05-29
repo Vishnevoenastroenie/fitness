@@ -123,6 +123,8 @@
   max-width: 100%;
   margin: 0 auto 37px;
 
+  cursor: pointer;
+
   gap: 48px;
 
   &::before {
@@ -179,7 +181,7 @@
   }
 }
 
-.is-active .tabs__control {
+.tariffs.is-active .tabs__control {
   color: $color-sapphire;
 
   &::before {
