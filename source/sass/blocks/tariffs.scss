@@ -65,6 +65,10 @@
 }
 
 .tariffs__container {
+  background-color: $color-ghost-white;
+}
+
+.tariffs .container {
   margin-bottom: 95px;
   padding-top: 120px;
   padding-bottom: 120px;
@@ -110,7 +114,7 @@
   }
 }
 
-.tabs__controls {
+.tariffs .tabs__controls {
   position: relative;
 
   flex-wrap: wrap;
@@ -147,7 +151,7 @@
   }
 }
 
-.tabs__control {
+.tariffs .tabs__control {
   position: relative;
 
   width: max-content;
@@ -173,25 +177,25 @@
   @media (max-width: $mobile-size-max) {
     font-size: 16px;
   }
+}
 
-  &.is-active {
-    opacity: 1;
+.is-active .tabs__control {
+  color: $color-sapphire;
 
-    &::before {
-      content: "";
-      position: absolute;
-      bottom: -8px;
-      left: 0;
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: -8px;
+    left: 0;
 
-      width: 100%;
-      height: 2px;
+    width: 100%;
+    height: 2px;
 
-      background-color: $color-crimson;
-    }
+    background-color: $color-crimson;
   }
 }
 
-.tabs__element {
+.tariffs .tabs__element {
   background-color: transparent;
 
   @media (max-width: $mobile-size-max) {
@@ -199,7 +203,7 @@
   }
 }
 
-.tabs__element ul {
+.tariffs .tabs__element ul {
   display: grid;
   justify-content: center;
   margin: 0;
@@ -301,9 +305,31 @@
   user-select: none;
 
   gap: 14px;
+
+  &::after {
+    content: "₽";
+
+    font-weight: 400;
+    font-size: 58px;
+    color: $color-sapphire;
+
+    -webkit-text-stroke: 2px;
+  }
+
+  @media (max-width: $mobile-size-max) {
+    margin-top: 45px;
+
+    font-size: 48px;
+
+    gap: 12px;
+
+    &::after {
+      font-size: 40px;
+    }
+  }
 }
 
-.tabs__element li {
+.tariffs .tabs__element li {
   position: relative;
 
   display: flex;
@@ -359,7 +385,7 @@
   }
 }
 
-.tariffs__btn {
+.tariffs .btn {
   margin: auto auto 0;
   padding: 25px 46px;
 
@@ -368,6 +394,8 @@
 
   &::before {
     background-image: $gr-tariffs-btn;
+
+    transition: 0.3s transform, 0.3s clip-path;
   }
 
   &:hover,
