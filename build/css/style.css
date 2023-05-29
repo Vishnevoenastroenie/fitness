@@ -3039,7 +3039,6 @@ button,
   width: max-content;
   max-width: 100%;
   margin: 0 auto 37px;
-  cursor: pointer;
   gap: 48px;
 }
 .tariffs .tabs__controls::before {
@@ -3097,11 +3096,10 @@ button,
     font-size: 16px;
   }
 }
-
-.tariffs.is-active .tabs__control button {
-  color: #102654;
+.tariffs .tabs__control.is-active {
+  opacity: 1;
 }
-.tariffs.is-active .tabs__control button::before {
+.tariffs .tabs__control.is-active::before {
   content: "";
   position: absolute;
   bottom: -8px;
