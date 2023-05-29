@@ -1,1 +1,378 @@
 @import "../variables";
+
+.tariffs {
+  position: relative;
+
+  overflow: hidden;
+
+  &::before {
+    content: "";
+    position: absolute;
+    right: -108px;
+    bottom: 0;
+
+    width: 321px;
+    height: 384px;
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    transform: rotate(150deg);
+
+    @media (min-width: 1366px) {
+      background-image: url("./../img/tariffs.png");
+
+      @supports (background-image: url("./../img/tariffs.webp")) {
+        background-image: url("./../img/tariffs.webp");
+      }
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("./../img/tariffs@2x.png");
+
+        @supports (background-image: url("./../img/tariffs@2x.webp")) {
+          background-image: url("./../img/tariffs@2x.webp");
+        }
+      }
+    }
+
+    @media (max-width: $tablet-size-max) {
+      right: -10px;
+
+      width: 289px;
+      height: 345px;
+
+      background-image: url("./../img/tariffs-tablet.png");
+
+      @supports (background-image: url("./../img/tariffs-tablet.webp")) {
+        background: width 100%;
+        background-image: url("./../img/tariffs-tablet.webp");
+      }
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background: width 100%;
+        background-image: url("./../img/tariffs-tablet@2x.jpg");
+
+        @supports (background-image: url("./../img/tariffs-tablet@2x.webp")) {
+          background: width 100%;
+          background-image: url("./../img/tariffs-tablet@2x.webp");
+        }
+      }
+    }
+
+    @media (max-width: $mobile-size-max) {
+      display: none;
+    }
+  }
+}
+
+.tariffs__container {
+  margin-bottom: 95px;
+  padding-top: 120px;
+  padding-bottom: 120px;
+
+  background-color: $color-ghost-white;
+
+  @media (max-width: $tablet-size-max) {
+    margin-bottom: 75px;
+    padding: 104px 163px 100px;
+  }
+
+  @media (max-width: $mobile-size-max) {
+    margin-bottom: 0;
+    padding: 70px 15px;
+  }
+}
+
+.tariffs h2 {
+  margin-top: 0;
+  margin-bottom: 10px;
+
+  font-weight: 600;
+  font-size: 54px;
+  line-height: 65px;
+  font-family: $ff-alumni-sans;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  @media (max-width: $tablet-size-max) {
+    margin-right: 15px;
+    margin-bottom: 13px;
+
+    font-size: 42px;
+    line-height: 50px;
+  }
+
+  @media (max-width: $mobile-size-max) {
+    margin-right: 10px;
+    margin-bottom: 15px;
+
+    font-size: 32px;
+    line-height: 38px;
+  }
+}
+
+.tabs__controls {
+  position: relative;
+
+  flex-wrap: wrap;
+  justify-content: center;
+  width: max-content;
+  max-width: 100%;
+  margin: 0 auto 37px;
+
+  gap: 48px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+
+    width: 100%;
+    height: 2px;
+
+    background-color: rgba(120, 120, 120, 0.2);
+  }
+
+  @media (max-width: $tablet-size-max) {
+    margin: 0 auto 44px;
+
+    gap: 55px;
+  }
+
+  @media (max-width: $mobile-size-max) {
+    justify-content: space-between;
+    width: 100%;
+    margin: 0 auto 35px;
+
+    gap: 45px;
+  }
+}
+
+.tabs__control {
+  position: relative;
+
+  width: max-content;
+  margin: 0;
+  margin-bottom: 8px;
+  padding: 6px 0;
+
+  font-size: 20px;
+  line-height: 150%;
+  color: $color-sapphire;
+  text-transform: lowercase;
+
+  background-color: transparent;
+  border: 0;
+  opacity: 0.5;
+
+  user-select: none;
+
+  @media (max-width: $tablet-size-max) {
+    font-size: 18px;
+  }
+
+  @media (max-width: $mobile-size-max) {
+    font-size: 16px;
+  }
+
+  &.is-active {
+    opacity: 1;
+
+    &::before {
+      content: "";
+      position: absolute;
+      bottom: -8px;
+      left: 0;
+
+      width: 100%;
+      height: 2px;
+
+      background-color: $color-crimson;
+    }
+  }
+}
+
+.tabs__element {
+  background-color: transparent;
+
+  @media (max-width: $mobile-size-max) {
+    padding: 0;
+  }
+}
+
+.tabs__element ul {
+  display: grid;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+
+  gap: 40px;
+  grid-template-columns: 1fr 1fr 1fr;
+
+  @media (max-width: $tablet-size-max) {
+    display: flex;
+    flex-direction: column;
+
+    gap: 40px;
+  }
+
+  @media (max-width: $mobile-size-max) {
+    gap: 35px;
+  }
+}
+
+.tariffs h3 {
+  margin-top: 0;
+  margin-bottom: 5px;
+
+  font-size: 26px;
+  line-height: 40px;
+  text-align: center;
+
+  @media (max-width: $mobile-size-max) {
+    margin-bottom: 10px;
+
+    font-size: 22px;
+    line-height: 24px;
+  }
+}
+
+.tariffs p {
+  margin-top: 0;
+  margin-bottom: 20px;
+
+  font-size: 16px;
+  line-height: 150%;
+  text-align: center;
+}
+
+.tariffs__price {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.tariffs__price span {
+  position: relative;
+  bottom: 5px;
+  z-index: 0;
+
+  max-width: 300px;
+  margin-top: -100px;
+
+  font-weight: 700;
+  font-size: 100px;
+  line-height: 100%;
+  text-align: center;
+  color: $color-whisper;
+  word-break: break-all;
+
+  opacity: 0.48;
+
+  user-select: none;
+
+  @media (max-width: $mobile-size-max) {
+    margin-top: -80px;
+
+    font-size: 80px;
+  }
+}
+
+.tariffs__price h4 {
+  position: relative;
+  z-index: 1;
+
+  display: flex;
+  align-items: center;
+  max-width: 300px;
+  margin: 0;
+  margin-top: 60px;
+
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 100%;
+  color: $color-egyptian-blue;
+  word-break: break-all;
+
+  user-select: none;
+
+  gap: 14px;
+}
+
+.tabs__element li {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-width: 360px;
+  min-height: 448px;
+  padding: 57px 30px 67px;
+
+  list-style: none;
+
+  background-color: $color-default-white;
+
+  @media (max-width: $tablet-size-max) {
+    min-height: 448px;
+  }
+
+  @media (max-width: $mobile-size-max) {
+    min-width: 100%;
+    min-height: 384px;
+    padding: 50px 25px 55px;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background: $gr-tariffs-card;
+    background-size: 400%;
+
+    transition: background-position 0.25s linear;
+  }
+
+  &:hover,
+  &:focus {
+    &::before {
+      background-position: 100%;
+    }
+
+    & .btn {
+      color: $color-default-white;
+
+      &::before {
+        background-position: 100%;
+      }
+    }
+  }
+}
+
+.tariffs__btn {
+  margin: auto auto 0;
+  padding: 25px 46px;
+
+  line-height: 16px;
+  color: $color-sapphire;
+
+  &::before {
+    background-image: $gr-tariffs-btn;
+  }
+
+  &:hover,
+  &:focus {
+    outline: 2px solid $color-resolution-blue;
+    outline-offset: $color-torch-red;
+  }
+}
