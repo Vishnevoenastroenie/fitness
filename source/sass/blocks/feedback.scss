@@ -1,8 +1,9 @@
 @import "../variables";
 
-.feedback > .container {
+.feedback__container {
   display: grid;
-  max-width: 100%;
+  //max-width: 100%;
+  width: 100%;
   padding-right: 0;
   padding-left: 0;
 

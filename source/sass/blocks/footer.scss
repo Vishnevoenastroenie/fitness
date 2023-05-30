@@ -12,14 +12,12 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-top: 39px;
-  padding-bottom: 38px;
+  padding: 39px 103px 38px 103px;
 
   gap: 30px;
 
   @media (max-width: $tablet-size-max) {
-    padding-top: 45px;
-    padding-bottom: 38px;
+    padding: 45px;
 
     gap: 4px;
   }
@@ -27,10 +25,9 @@
   @media (max-width: $mobile-size-max) {
     flex-direction: column;
     min-height: 260px;
-    padding-top: 49px;
-    padding-bottom: 43px;
+    padding: 49px 15px 43px;
 
-    gap: 15px;
+    gap: 6px;
   }
 }
 
@@ -72,28 +69,21 @@
   margin-top: 10px;
 
   @media (max-width: $tablet-size-max) {
-    width: 82px;
     margin-top: 0;
   }
-
-  @media (max-width: $mobile-size-max) {
-    //width: 68px;
-    //height: 15px;
-    //margin-bottom: 20px;
-  }
-
-  //@media (max-width: $mobile-size-max) {
-  //width: 68px;
-  //height: 15px;
-  //margin-bottom: 20px;
-  //}
 }
 
-.foooter__logo-picture img {
+.footer__logo-icon {
+  @media (max-width: $tablet-size-max) {
+    width: 82px;
+    height: auto;
+  }
+
   @media (max-width: $mobile-size-max) {
-    //width: 68px;
-    //height: 15px;
-    margin-bottom: 20px;
+    width: 68px;
+    height: auto;
+    margin-top: 3px;
+    margin-bottom: 23px;
   }
 }
 

@@ -8,7 +8,7 @@
   grid-template-columns: 1fr minmax(500px, 660px);
 
   @media (max-width: $tablet-size-max) {
-    padding-top: 25px;
+    padding-top: 26px;
     padding-bottom: 50px;
 
     grid-template-columns: 1fr 386px;
