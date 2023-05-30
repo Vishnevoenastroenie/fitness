@@ -1,1 +1,15 @@
 @import "../variables";
+
+.feedback > .container {
+  display: grid;
+  max-width: 100%;
+  padding-right: 0;
+  padding-left: 0;
+
+  grid-template-columns: 1fr 1fr;
+
+  @media (max-width: $tablet-size-max) {
+    display: flex;
+    flex-direction: column;
+  }
+}

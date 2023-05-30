@@ -483,17 +483,17 @@
         <div class="advantages__container container">
           <h2>Наши преимущества</h2>
           <ul class="advantages__list list-reset">
-            <li class="advantages__item">
-              <div class="advantages__value">
+            <li class="advantages__item advantages__item--central">
+              <div class="advantages__value advantages__value--central">
                 <span>100</span>
                 <p>Тренажеров</p>
               </div>
-              <div class="advantages__description">
+              <div class="advantages__description advantages__description--central">
                 <p>Современные тренажеры на&nbsp;все группы мышц</p>
               </div>
             </li>
             <li class="advantages__item">
-              <div class="advantages__value">
+              <div class="advantages__value advantages__value--area">
                 <span>900</span>
                 <small>кв/м</small>
               </div>
@@ -558,15 +558,15 @@
               </div>
             </div>
             <ul class="promotions__list list-reset">
-              <li>
+              <li class="promotions__element">
                 <b>Месяц бесплатно</b>
                 <p>Приведи друга, получи абонемент в&nbsp;подарок</p>
-                <a href="#" class="promotions__btn-blue btn">Подробнее</a>
+                <a href="#" class="promotions__btn promotions__btn--blue btn">Подробнее</a>
               </li>
-              <li>
+              <li class="promotions__element">
                 <b>Скидка&nbsp;20%</b>
                 <p>Корпоративный фитнес с&nbsp;командой</p>
-                <a href="#" class="promotions__btn-blue btn">Подробнее</a>
+                <a href="#" class="promotions__btn promotions__btn--blue btn">Подробнее</a>
               </li>
             </ul>
           </div>
@@ -632,24 +632,28 @@
       <section class="feedback">
         <h2 class="visually-hidden">Запись на бесплатное занятие.</h2>
         <div class="container">
-          <section class="form">
-            <div class="container">
+          <section class="form" data-form-validate>
+            <div class="form__container">
               <h2>Бесплатное занятие</h2>
-              <div class="form__wrapper" data-callback="base" data-form-validate data-message-base="Сообщение">
-                <form action="https://echo.htmlacademy.ru" method="post">
-                  <div class="custom-input" data-limitation="name" data-required data-validate-type="text">
-                    <input name="name" data-focus type="text" aria-label="Введите имя." autocomplete="off" required placeholder="Имя">
+              <form action="https://echo.htmlacademy.ru/" method="post" autocomplete="off">
+                <div class="form__input-wrapper">
+                  <div class="form__input form__input--username">
+                    <label for="username" data-validate-type="text" data-required data-message-base="Поле обязательно к заполнению">
+                      <input type="text" name="username" id="username" placeholder="Имя" required>
+                    </label>
                   </div>
-                  <div class="custom-input" data-required data-validate-type="phone">
-                    <input name="tel" type="tel" aria-label="Введите номер телефона." autocomplete="off" required placeholder="Телефон">
+                  <div class="form__input form__input--userphone">
+                    <label for="userphone" data-validate-type="phone" data-required data-message-base="Поле обязательно к заполнению" data-message-extra="Номер введен некорректно - 11 цифр">
+                      <input type="tel" name="userphone" id="userphone" placeholder="Телефон" required pattern="[0-9]{11}">
+                    </label>
                   </div>
-                  <button type="submit">Отправить</button>
-                </form>
-              </div>
+                  <button class="form__input form__input--button" type="submit">Отправить</button>
+                </div>
+              </form>
             </div>
           </section>
           <section class="contacts">
-            <div class="container">
+            <div class="contacts__container">
               <h2>Контакты</h2>
               <ul class="list-reset">
                 <li>
@@ -675,56 +679,58 @@
       </section>
     </main>
     <footer class="footer container">
-      <div class="footer__navigation">
-        <a class="footer__logo-link oll-links" href="index.html">
-          <picture class="footer__logo-picture">
-            <source media="(max-width: 767px)" srcset="img/svg/footer-logo-mobile.svg">
-            <source media="(max-width: 1199px)" srcset="img/svg/footer-logo-tablet.svg">
-            <img src="img/svg/footer-logo-desktop.svg" width="88" height="32" alt="Логотип сайта. Название Supergym, написанное большими буквами белого цвета.">
-          </picture>
-        </a>
-        <ul class="list-reset">
-          <li class="oll-links">
-            <a href="#">Услуги</a>
-          </li>
-          <li class="oll-links">
-            <a href="#">Абонементы</a>
-          </li>
-          <li class="oll-links">
-            <a href="#">Акции</a>
-          </li>
-          <li class="oll-links">
-            <a href="#">Тренеры</a>
-          </li>
-          <li class="oll-links">
-            <a href="#">Расписание</a>
-          </li>
-        </ul>
-      </div>
-      <div class="footer__social">
-        <ul class="list-reset">
-          <li class="footer__social-link oll-links">
-            <a href="#" aria-label="Вконтакте.">
-              <svg aria-hidden="true" width="25" height="25" viewbox="0 0 25 25" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                <use xlink:href="./img/sprite.svg#footer-social-vk"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="footer__social-link oll-links">
-            <a href="#" aria-label="Одноклассники.">
-              <svg aria-hidden="true" width="25" height="25" viewbox="0 0 25 25" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                <use xlink:href="./img/sprite.svg#footer-social-ok"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="footer__social-link oll-links">
-            <a href="#" aria-label="Рэддит.">
-              <svg aria-hidden="true" width="25" height="25" viewbox="0 0 25 25" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                <use xlink:href="./img/sprite.svg#footer-social-reddit"></use>
-              </svg>
-            </a>
-          </li>
-        </ul>
+      <div class="footer__container">
+        <div class="footer__navigation">
+          <a class="footer__logo-link oll-links" href="index.html">
+            <picture class="footer__logo-picture">
+              <source media="(max-width: 767px)" srcset="img/svg/footer-logo-mobile.svg">
+              <source media="(max-width: 1199px)" srcset="img/svg/footer-logo-tablet.svg">
+              <img src="img/svg/footer-logo-desktop.svg" width="88" height="32" alt="Логотип сайта. Название Supergym, написанное большими буквами белого цвета.">
+            </picture>
+          </a>
+          <ul class="footer__navigation-list list-reset">
+            <li class="oll-links">
+              <a href="#">Услуги</a>
+            </li>
+            <li class="oll-links">
+              <a href="#">Абонементы</a>
+            </li>
+            <li class="oll-links">
+              <a href="#">Акции</a>
+            </li>
+            <li class="oll-links">
+              <a href="#">Тренеры</a>
+            </li>
+            <li class="oll-links">
+              <a href="#">Расписание</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__social">
+          <ul class="list-reset">
+            <li class="footer__social-link oll-links">
+              <a href="#" aria-label="Вконтакте.">
+                <svg aria-hidden="true" width="25" height="25" viewbox="0 0 25 25" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                  <use xlink:href="./img/sprite.svg#footer-social-vk"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer__social-link oll-links">
+              <a href="#" aria-label="Одноклассники.">
+                <svg aria-hidden="true" width="25" height="25" viewbox="0 0 25 25" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                  <use xlink:href="./img/sprite.svg#footer-social-ok"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer__social-link oll-links">
+              <a href="#" aria-label="Рэддит.">
+                <svg aria-hidden="true" width="25" height="25" viewbox="0 0 25 25" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                  <use xlink:href="./img/sprite.svg#footer-social-reddit"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </footer>
   </div>

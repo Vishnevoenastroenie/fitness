@@ -5,6 +5,7 @@ import './modules/play-video';
 import {initTabs} from './modules/init-tabs';
 import './modules/tabs';
 import {initCoachesSwiper} from './modules/coaches-slider';
+import {initReviewsSwiper} from './modules/reviews-slider';
 
 // ---------------------------------
 
@@ -27,6 +28,7 @@ window.addEventListener('DOMContentLoaded', () => {
     form.init();
     initTabs();
     initCoachesSwiper();
+    initReviewsSwiper();
   });
 });
 

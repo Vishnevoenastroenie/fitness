@@ -15,6 +15,8 @@ $color-sapphire:                    #102654; //html, фон формы
 $color-resolution-blue:             #1c3374; //фон синих карточек, кроме формы
 $color-egyptian-blue:               #103aae; //цены
 $color-smalt:                       #00359f; //градиент обводки
+$color-flying-fish:                 #0041ca; //числа в преимуществах
+$color-persian-blue:                #2e35ac; //подписи под числами в преимуществах
 $color-torch-red:                   #ed0233; //промо
 $color-crimson:                     #d10a42; //градиент обводки
 $color-black-russian:               #030a1a; //фон подвала
@@ -23,14 +25,18 @@ $color-whisper:                     #e8e8e8; //тени цен
 $color-light-state-grey:            #74819c; //фон зала, поля в форме
 $color-chambray:                    #495a7d; //фон тренерских фото
 
+
 // Gradient
 
 $black-to-right:                    linear-gradient(90deg, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0) 75%);
 $gr-header-desktop:                 conic-gradient(from 150.87deg at 16.03% 39.06%, #b80027 -46.69deg, #003d85 32.24deg, #b80027 313.31deg, #003d85 392.24deg);
 $gr-header-tablet:                  conic-gradient(from 155.49deg at 20.7% 35.74%, #b80027 -46.69deg, #003d85 32.24deg, #b80027 313.31deg, #003d85 392.24deg);
 $gr-header-mobile:                  conic-gradient(from 167.26deg at 35.31% 34.22%, #b80027 -46.69deg, #003d85 32.24deg, #b80027 313.31deg, #003d85 392.24deg);
+$gr-video-btn:                      linear-gradient(44.89deg, #003d85 25.38%, #b80027 74.89%);
 $gr-tariffs-card:                   linear-gradient(145deg, rgba(209, 10, 66, 1) 0%, rgba(0, 53, 159, 1) 100%);
 $gr-tariffs-btn:                    linear-gradient(97.05deg, #ed0233 17.6%, #003eb7 95.31%);
+$gr-advantages-numbers:             linear-gradient(142.51deg, $color-crimson 0%, $color-flying-fish 87.33%);
+$gr-promotions-border:              linear-gradient(145deg, #d10a42 0, #00359f 100%);
 
 // Typography
 // ---------------------------------

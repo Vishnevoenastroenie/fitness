@@ -1,1 +1,180 @@
 @import "../variables";
+
+.form {
+  width: 100%;
+
+  color: $color-default-white;
+
+  background-color: $color-sapphire;
+
+  h2 {
+    margin: 0;
+    margin-bottom: 17px;
+
+    font-weight: 800;
+    font-size: 54px;
+    line-height: 84px;
+    font-family: $ff-alumni-sans;
+    letter-spacing: 0.03em;
+
+    @media (max-width: $tablet-size-max) {
+      margin-bottom: 31px;
+
+      font-weight: 700;
+      font-size: 42px;
+      line-height: 50px;
+      letter-spacing: 0.03em;
+    }
+
+    @media (max-width: $mobile-size-max) {
+      margin-bottom: 35px;
+
+      font-weight: 600;
+      font-size: 32px;
+      line-height: 38px;
+    }
+  }
+}
+
+.form__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 100%;
+  max-width: 683px;
+  height: 100%;
+  margin-right: 0;
+  margin-left: auto;
+  padding: 56px 170px 70px 103px;
+
+  @media (max-width: $tablet-size-max) {
+    max-width: 100%;
+    margin: 0;
+    padding: 61px 162px 70px 133px;
+  }
+
+  @media (max-width: $mobile-size-max) {
+    padding: 64px 15px 69px 15px;
+  }
+}
+
+.form__input-wrapper {
+  display: grid;
+
+  gap: 30px;
+  grid-template-columns: min-content min-content;
+
+  @media (max-width: $tablet-size-max) {
+    column-gap: 60px;
+  }
+
+  @media (max-width: $mobile-size-max) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.form__input {
+  & input:not([type="submit"]) {
+    position: relative;
+
+    width: 190px;
+    padding: 6px 0;
+
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    font-family: $ff-roboto-condensed;
+    color: $color-ghost-white;
+
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid $color-light-state-grey;
+
+    @media (max-width: $tablet-size-max) {
+      width: 206px;
+    }
+
+    @media (max-width: $mobile-size-max) {
+      width: 100%;
+    }
+
+    &::placeholder {
+      padding: 6px 0;
+
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 16px;
+      font-family: $ff-roboto-condensed;
+      color: $color-default-white;
+
+      background-color: $color-sapphire;
+    }
+
+    &:active,
+    &:hover {
+      outline: none;
+      box-shadow: 2px 0 10px $color-whisper;
+    }
+
+    &:focus {
+      box-shadow: 2px 0 10px $color-crimson;
+    }
+  }
+
+  &--button {
+    margin: 0 -2px;
+    margin-top: -3px;
+    padding: 17px 0;
+    padding-bottom: 16px;
+
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    font-family: $ff-roboto-condensed;
+    color: $color-default-white;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+
+    background-color: $color-sapphire;
+    border: 3px solid $color-default-white;
+    cursor: pointer;
+
+    user-select: none;
+
+    grid-column: 1 / -1;
+
+    @media (max-width: $tablet-size-max) {
+      margin-right: 0;
+    }
+
+    @media (max-width: $mobile-size-max) {
+      margin-top: 7px;
+      margin-right: -2px;
+    }
+
+    &:hover,
+    &:focus {
+      color: $color-sapphire;
+
+      background-color: $color-default-white;
+      border-color: $color-black-russian;
+    }
+
+    &:active {
+      opacity: 0.8;
+    }
+  }
+
+  label {
+    position: relative;
+  }
+
+  span {
+    position: absolute;
+    top: 30px;
+    left: 0;
+
+    font-size: 12px;
+    color: $color-crimson;
+  }
+}
