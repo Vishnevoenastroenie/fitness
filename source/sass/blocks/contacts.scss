@@ -24,6 +24,10 @@
     background-color: rgba($color-sapphire, 0.3);
   }
 
+  @media (max-width: 1362px) {
+    padding-right: 50px;
+  }
+
   @media (max-width: $tablet-size-max) {
     max-width: 100%;
     margin: 0;

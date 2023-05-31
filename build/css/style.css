@@ -3380,6 +3380,7 @@ button,
     padding: 50px 45px;
   }
   .promo__description p {
+    margin-bottom: 0;
     font-size: 12px;
     line-height: 18px;
   }
@@ -3504,10 +3505,16 @@ button,
 }
 @media (max-width: 1199px) {
   .promo__button {
+    margin-top: 28px;
     padding: 12px;
     font-size: 10px;
     line-height: 12px;
     border-width: 2px;
+  }
+}
+@media (max-width: 1199px) {
+  .promo__button {
+    margin-top: 31px;
   }
 }
 
@@ -3519,7 +3526,7 @@ button,
 }
 @media (max-width: 1199px) {
   .coaches .container {
-    padding-top: 24px;
+    padding-top: 50px;
     padding-bottom: 100px;
   }
 }
@@ -4458,7 +4465,7 @@ button,
 }
 @media (max-width: 1199px) {
   .reviews .container {
-    padding-bottom: 100px;
+    padding-bottom: 103px;
   }
 }
 @media (max-width: 767px) {
@@ -4903,6 +4910,11 @@ button,
   height: 1px;
   background-color: rgba(16, 38, 84, 0.3);
 }
+@media (max-width: 1362px) {
+  .contacts__container {
+    padding-right: 50px;
+  }
+}
 @media (max-width: 1199px) {
   .contacts__container {
     max-width: 100%;
@@ -5049,6 +5061,7 @@ button,
 @media (max-width: 1199px) {
   .footer__container {
     padding: 45px;
+    padding-top: 43px;
     gap: 4px;
   }
 }

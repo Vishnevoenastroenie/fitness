@@ -43,6 +43,8 @@
     padding: 50px 45px;
 
     p {
+      margin-bottom: 0;
+
       font-size: 12px;
       line-height: 18px;
     }
@@ -174,11 +176,16 @@
   }
 
   @media (max-width: $tablet-size-max) {
+    margin-top: 28px;
     padding: 12px;
 
     font-size: 10px;
     line-height: 12px;
 
     border-width: 2px;
+  }
+
+  @media (max-width: $tablet-size-max) {
+    margin-top: 31px;
   }
 }
