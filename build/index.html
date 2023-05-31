@@ -630,19 +630,19 @@
       <section class="feedback">
         <h2 class="visually-hidden">Запись на бесплатное занятие.</h2>
         <div class="feedback__container">
-          <section class="form" data-form-validate data-callback="base">
+          <section class="form">
             <div class="form__container">
               <h2>Бесплатное занятие</h2>
               <form action="https://echo.htmlacademy.ru/" method="post" autocomplete="off">
                 <div class="form__input-wrapper">
-                  <div data-limitation="name" data-required data-validate-type="text" data-message-base="Поле обязательно к заполнению">
-                    <label for="username">
-                      <input type="text" name="username" id="username" data-focus aria-label="Введите имя." autocomplete="off" required placeholder="Имя">
+                  <div name="name" required type="text" data-message-base="Поле обязательно к заполнению">
+                    <label for="name">
+                      <input type="text" name="name" id="name" autofocus aria-label="Введите имя." autocomplete="off" required placeholder="Имя" minlength="1" maxlength="32">
                     </label>
                   </div>
-                  <div data-required data-validate-type="phone" data-message-base="Поле обязательно к заполнению">
+                  <div required type="phone" data-message-base="Поле обязательно к заполнению">
                     <label for="phone">
-                      <input type="phone" name="phone" id="phone" aria-label="Введите номер телефона." autocomplete="off" required placeholder="Телефон">
+                      <input type="tel" name="phone" id="phone" aria-label="Введите номер телефона." autocomplete="off" required placeholder="Телефон" pattern="+7-[9]{3}-[0-9]{3}-[0-9]{4}" maxlength="18">
                     </label>
                   </div>
                   <button class="btn" type="submit">Отправить</button>
