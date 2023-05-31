@@ -3098,7 +3098,7 @@ button,
 }
 
 .coaches__swiper .swiper-button svg {
-  width: 18px;
+  width: 20px;
   height: 34px;
 }
 
@@ -3615,6 +3615,10 @@ button,
   cursor: pointer;
 }
 
+.reviews .swiper-button svg {
+  width: 20px;
+}
+
 .reviews .swiper-button--prev {
   left: 0;
   -webkit-transform: translateX(-100%);
@@ -3953,7 +3957,9 @@ button,
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 39px 103px 38px 103px;
+  max-width: 1366px;
+  margin: auto;
+  padding: 38px 103px 38px 103px;
   gap: 30px;
 }
 
@@ -4378,7 +4384,6 @@ button,
   }
 
   .promo__description p {
-    margin-bottom: 30px;
     font-size: 12px;
     line-height: 18px;
   }
@@ -5049,7 +5054,7 @@ button,
   }
 
   .coaches__swiper .swiper-button svg {
-    width: 10px;
+    width: 12px;
     height: 19px;
   }
 
@@ -5248,7 +5253,8 @@ button,
   }
 
   .reviews .swiper-button svg {
-    width: 11px;
+    width: 14px;
+    height: 19px;
   }
 
   .reviews__card {
