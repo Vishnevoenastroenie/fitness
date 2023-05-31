@@ -146,12 +146,14 @@
   }
 }
 
+.promo__picture {
+  background-color: $color-sapphire;
+}
+
 .promo__picture img {
   display: block;
   width: 100%;
   height: 100%;
-
-  background-color: $color-sapphire;
 }
 
 .promo__button {

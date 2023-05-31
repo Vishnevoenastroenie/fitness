@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="ru">
-
 <head>
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -20,7 +19,6 @@
   <link rel="apple-touch-icon" href="img/favicon/apple-favicon.png">
   <link rel="stylesheet" type="text/css" href="css/style.min.css">
 </head>
-
 <body>
   <div class="wrapper">
     <header class="header">
@@ -637,17 +635,17 @@
               <h2>Бесплатное занятие</h2>
               <form action="https://echo.htmlacademy.ru/" method="post" autocomplete="off">
                 <div class="form__input-wrapper">
-                  <div class="form__input form__input--username">
-                    <label for="username" data-validate-type="text" data-required data-message-base="Поле обязательно к заполнению">
-                      <input type="text" name="username" id="username" placeholder="Имя" required>
+                  <div data-limitation="name" data-required data-validate-type="text" data-message-base="Поле обязательно к заполнению">
+                    <label for="username">
+                      <input type="text" name="username" id="username" data-focus aria-label="Введите имя." autocomplete="off" required placeholder="Имя">
                     </label>
                   </div>
-                  <div class="form__input form__input--userphone">
-                    <label for="userphone" data-validate-type="phone" data-required data-message-base="Поле обязательно к заполнению" data-message-extra="Номер введен некорректно - 11 цифр">
-                      <input type="tel" name="userphone" id="userphone" placeholder="Телефон">
+                  <div data-required data-validate-type="phone" data-message-base="Поле обязательно к заполнению">
+                    <label for="userphone">
+                      <input type="tel" name="userphone" id="userphone" aria-label="Введите номер телефона." autocomplete="off" required placeholder="Телефон">
                     </label>
                   </div>
-                  <button class="form__input form__input--button" type="submit">Отправить</button>
+                  <button class="btn" type="submit">Отправить</button>
                 </div>
               </form>
             </div>
@@ -689,19 +687,19 @@
             </picture>
           </a>
           <ul class="footer__navigation-list list-reset">
-            <li class="oll-links">
+            <li>
               <a href="#">Услуги</a>
             </li>
-            <li class="oll-links">
+            <li>
               <a href="#">Абонементы</a>
             </li>
-            <li class="oll-links">
+            <li>
               <a href="#">Акции</a>
             </li>
-            <li class="oll-links">
+            <li>
               <a href="#">Тренеры</a>
             </li>
-            <li class="oll-links">
+            <li>
               <a href="#">Расписание</a>
             </li>
           </ul>
@@ -734,9 +732,7 @@
       </div>
     </footer>
   </div>
-
   <script src="js/vendor.min.js"></script>
   <script src="js/main.min.js"></script>
 </body>
-
 </html>

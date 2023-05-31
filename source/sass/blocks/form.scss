@@ -73,108 +73,106 @@
   }
 }
 
-.form__input {
-  & input:not([type="submit"]) {
-    position: relative;
+.form input {
+  position: relative;
 
-    width: 190px;
+  width: 190px;
+  padding: 6px 0;
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  font-family: $ff-roboto-condensed;
+  color: $color-ghost-white;
+
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid $color-light-state-grey;
+
+  @media (max-width: $tablet-size-max) {
+    width: 206px;
+  }
+
+  @media (max-width: $mobile-size-max) {
+    width: 100%;
+  }
+
+  &::placeholder {
     padding: 6px 0;
 
     font-weight: 400;
     font-size: 14px;
     line-height: 16px;
     font-family: $ff-roboto-condensed;
-    color: $color-ghost-white;
-
-    background-color: transparent;
-    border: none;
-    border-bottom: 1px solid $color-light-state-grey;
-
-    @media (max-width: $tablet-size-max) {
-      width: 206px;
-    }
-
-    @media (max-width: $mobile-size-max) {
-      width: 100%;
-    }
-
-    &::placeholder {
-      padding: 6px 0;
-
-      font-weight: 400;
-      font-size: 14px;
-      line-height: 16px;
-      font-family: $ff-roboto-condensed;
-      color: $color-default-white;
-
-      background-color: $color-sapphire;
-    }
-
-    &:active,
-    &:hover {
-      outline: none;
-      box-shadow: 2px 0 10px $color-whisper;
-    }
-
-    &:focus {
-      box-shadow: 2px 0 10px $color-crimson;
-    }
-  }
-
-  &--button {
-    margin: 0 -2px;
-    margin-top: -3px;
-    padding: 17px 0;
-    padding-bottom: 16px;
-
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 16px;
-    font-family: $ff-roboto-condensed;
     color: $color-default-white;
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
 
     background-color: $color-sapphire;
-    border: 3px solid $color-default-white;
-    cursor: pointer;
-
-    user-select: none;
-
-    grid-column: 1 / -1;
-
-    @media (max-width: $tablet-size-max) {
-      margin-right: 0;
-    }
-
-    @media (max-width: $mobile-size-max) {
-      margin-top: 7px;
-      margin-right: -2px;
-    }
-
-    &:hover,
-    &:focus {
-      color: $color-sapphire;
-
-      background-color: $color-default-white;
-      border-color: $color-black-russian;
-    }
-
-    &:active {
-      opacity: 0.8;
-    }
   }
 
-  label {
-    position: relative;
+  &:active,
+  &:hover {
+    outline: none;
+    box-shadow: 2px 0 10px $color-whisper;
   }
 
-  span {
-    position: absolute;
-    top: 30px;
-    left: 0;
+  &:focus {
+    box-shadow: 2px 0 10px $color-crimson;
+  }
+}
 
-    font-size: 12px;
-    color: $color-crimson;
+.form label {
+  position: relative;
+}
+
+.form span {
+  position: absolute;
+  top: 30px;
+  left: 0;
+
+  font-size: 12px;
+  color: $color-crimson;
+}
+
+.form form button[type="submit"] {
+  margin: 0 -2px;
+  margin-top: -3px;
+  padding: 17px 0;
+  padding-bottom: 16px;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  font-family: $ff-roboto-condensed;
+  color: $color-default-white;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+
+  background-color: $color-sapphire;
+  border: 3px solid $color-default-white;
+  cursor: pointer;
+
+  user-select: none;
+
+  grid-column: 1 / -1;
+
+  @media (max-width: $tablet-size-max) {
+    margin-right: 0;
+  }
+
+  @media (max-width: $mobile-size-max) {
+    margin-top: 7px;
+    margin-right: -2px;
+  }
+
+  &:hover,
+  &:focus {
+    color: $color-sapphire;
+
+    background-color: $color-default-white;
+    border-color: $color-black-russian;
+  }
+
+  &:active {
+    opacity: 0.8;
   }
 }

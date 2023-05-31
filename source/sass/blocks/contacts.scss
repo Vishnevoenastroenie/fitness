@@ -127,8 +127,8 @@
   }
 }
 
-.contacts ul p,
-.contacts ul a {
+.contacts__container p,
+.contacts__container a {
   margin: 0;
 
   font-size: 14px;
@@ -140,6 +140,6 @@
   }
 }
 
-.contacts ul p {
+.contacts__container p {
   margin-left: -5px;
 }

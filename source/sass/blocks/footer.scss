@@ -121,6 +121,17 @@
   font-size: 14px;
   line-height: 16px;
 
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
   @media (max-width: $mobile-size-max) {
     margin-bottom: 22px;
 
@@ -162,6 +173,12 @@
 
 .footer__social li a {
   display: flex;
-
   color: $color-default-white;
+}
+
+.footer__social li {
+  & svg {
+    width: 25px;
+    height: 25px;
+  }
 }
