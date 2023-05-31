@@ -3380,7 +3380,6 @@ button,
     padding: 50px 45px;
   }
   .promo__description p {
-    margin-bottom: 30px;
     font-size: 12px;
     line-height: 18px;
   }
@@ -3608,12 +3607,12 @@ button,
   color: #102654;
 }
 .coaches__swiper .swiper-button svg {
-  width: 18px;
+  width: 20px;
   height: 34px;
 }
 @media (max-width: 767px) {
   .coaches__swiper .swiper-button svg {
-    width: 10px;
+    width: 12px;
     height: 19px;
   }
 }
@@ -4527,12 +4526,16 @@ button,
   border: 0;
   cursor: pointer;
 }
+.reviews .swiper-button svg {
+  width: 20px;
+}
 @media (max-width: 767px) {
   .reviews .swiper-button {
     padding: 0 20px 0 16px;
   }
   .reviews .swiper-button svg {
-    width: 11px;
+    width: 14px;
+    height: 19px;
   }
 }
 
@@ -5038,7 +5041,9 @@ button,
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 39px 103px 38px 103px;
+  max-width: 1366px;
+  margin: auto;
+  padding: 38px 103px 38px 103px;
   gap: 30px;
 }
 @media (max-width: 1199px) {

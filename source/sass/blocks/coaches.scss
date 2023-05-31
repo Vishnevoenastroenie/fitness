@@ -90,11 +90,11 @@
   }
 
   & svg {
-    width: 18px;
+    width: 20px;
     height: 34px;
 
     @media (max-width: $mobile-size-max) {
-      width: 10px;
+      width: 12px;
       height: 19px;
     }
   }

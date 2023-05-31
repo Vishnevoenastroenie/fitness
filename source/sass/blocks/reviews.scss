@@ -73,11 +73,16 @@
   border: 0;
   cursor: pointer;
 
+  & svg {
+    width: 20px;
+  }
+
   @media (max-width: $mobile-size-max) {
     padding: 0 20px 0 16px;
 
     & svg {
-      width: 11px;
+      width: 14px;
+      height: 19px;
     }
   }
 }
