@@ -632,7 +632,7 @@
       <section class="feedback">
         <h2 class="visually-hidden">Запись на бесплатное занятие.</h2>
         <div class="feedback__container">
-          <section class="form" data-form-validate>
+          <section class="form" data-form-validate data-callback="base" data-message-base="Сообщение">
             <div class="form__container">
               <h2>Бесплатное занятие</h2>
               <form action="https://echo.htmlacademy.ru/" method="post" autocomplete="off">
@@ -644,7 +644,7 @@
                   </div>
                   <div class="form__input form__input--userphone">
                     <label for="userphone" data-validate-type="phone" data-required data-message-base="Поле обязательно к заполнению" data-message-extra="Номер введен некорректно - 11 цифр">
-                      <input type="tel" name="userphone" id="userphone" placeholder="Телефон" required pattern="[0-9]{11}">
+                      <input type="tel" name="userphone" id="userphone" placeholder="Телефон">
                     </label>
                   </div>
                   <button class="form__input form__input--button" type="submit">Отправить</button>
