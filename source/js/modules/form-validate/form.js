@@ -62,9 +62,12 @@ export class Form {
     if (this.validateForm(event.target) && callback) {
       this._callbacks[callback].successCallback(event);
       if (this._callbacks[callback].reset) {
-        setTimeout(() => {
-          this.reset(event.target);
-        }, this._callbacks[callback].resetTimeout ? this._callbacks[callback].resetTimeout : 500);
+        setTimeout(
+            () => {
+              this.reset(event.target);
+            },
+            this._callbacks[callback].resetTimeout ? this._callbacks[callback].resetTimeout : 500
+        );
       }
       return;
     }

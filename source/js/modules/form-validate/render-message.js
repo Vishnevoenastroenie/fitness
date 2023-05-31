@@ -7,7 +7,7 @@ export class Message {
 
   _messageTemplate(message, state) {
     const cssClass = state === 'valid' ? 'input-message--valid' : 'input-message--invalid';
-    return `<span class="input-message ${cssClass}">${message}</span>`;
+    return `<div class="input-message ${cssClass}">${message}</div>`;
   }
 
   removeMessage(parent) {
