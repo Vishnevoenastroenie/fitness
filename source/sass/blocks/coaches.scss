@@ -103,6 +103,15 @@
 .coaches__swiper .swiper-button--prev {
   left: -72px;
 
+  &:hover,
+  &:focus {
+    color: $color-resolution-blue;
+  }
+
+  &:active {
+    color: $color-sapphire;
+  }
+
   @media (max-width: $tablet-size-max) {
     left: -72px;
   }

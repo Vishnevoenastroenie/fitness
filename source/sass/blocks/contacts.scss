@@ -142,4 +142,8 @@
 
 .contacts__container p {
   margin-left: -5px;
+
+  @media (max-width: $tablet-size-max) {
+    margin-left: 0;
+  }
 }
