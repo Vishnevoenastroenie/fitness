@@ -143,9 +143,7 @@
 .contacts__container p {
   margin-left: -5px;
 
-  @media (max-width: $tablet-size-max) {
+  @media (max-width: $mobile-size-max) {
     margin-left: 0;
   }
 }
-
-//Пробное изменение из новой папки
