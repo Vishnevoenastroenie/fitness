@@ -3109,6 +3109,15 @@ button,
   left: -72px;
 }
 
+.coaches__swiper .swiper-button--prev:hover,
+.coaches__swiper .swiper-button--prev:focus {
+  color: #1c3374;
+}
+
+.coaches__swiper .swiper-button--prev:active {
+  color: #102654;
+}
+
 .coaches__swiper .swiper-button--next {
   right: -69px;
 }
@@ -5368,6 +5377,10 @@ button,
 
   .contacts ul::after {
     display: none;
+  }
+
+  .contacts__container p {
+    margin-left: 0;
   }
 
   .footer__container {
