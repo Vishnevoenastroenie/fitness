@@ -1631,7 +1631,7 @@ button,
 
 .oll-links:hover,
 .oll-links:focus {
-  opacity: 0.8;
+  opacity: 0.6;
 }
 
 .oll-links:active {
@@ -2803,7 +2803,7 @@ button,
 
 .tariffs__price span {
   position: relative;
-  bottom: 5px;
+  bottom: 18px;
   z-index: 0;
   max-width: 300px;
   margin-top: -100px;
@@ -3077,6 +3077,15 @@ button,
   margin: 0 auto;
 }
 
+.coaches .swiper-button:hover,
+.coaches .swiper-button:focus {
+  color: #1c3374;
+}
+
+.coaches .swiper-button:active {
+  color: #102654;
+}
+
 .coaches__swiper .swiper-button {
   position: absolute;
   top: 50%;
@@ -3262,7 +3271,7 @@ button,
 .advantages__container {
   max-width: 1246px;
   padding-top: 49px;
-  padding-bottom: 135px;
+  padding-bottom: 133px;
 }
 
 .advantages__container h2 {
@@ -3355,7 +3364,7 @@ button,
 .advantages__item:nth-child(2n+4)::before {
   content: "";
   position: absolute;
-  top: -26px;
+  top: -30px;
   left: 1px;
   width: 98%;
   height: 2px;
@@ -3626,6 +3635,20 @@ button,
   background-color: transparent;
   border: 0;
   cursor: pointer;
+}
+
+.reviews .swiper-button:hover,
+.reviews .swiper-button:focus {
+  color: #1c3374;
+}
+
+.reviews .swiper-button:active {
+  color: #102654;
+}
+
+.reviews .swiper-button:disabled {
+  cursor: not-allowed;
+  opacity: 0.2;
 }
 
 .reviews .swiper-button svg {
@@ -3983,7 +4006,7 @@ button,
   align-items: center;
   max-width: 1366px;
   margin: auto;
-  padding: 38px 103px 38px 103px;
+  padding: 40px 103px 38px 103px;
   gap: 30px;
 }
 
@@ -4527,7 +4550,7 @@ button,
 
   .advantages__container {
     padding-top: 91px;
-    padding-bottom: 93px;
+    padding-bottom: 92px;
   }
 
   .advantages__container h2 {
@@ -4654,7 +4677,7 @@ button,
   }
 
   .promotions__main-description {
-    padding-bottom: 42px;
+    padding-bottom: 46px;
   }
 
   .promotions__list {
@@ -4668,7 +4691,7 @@ button,
   }
 
   .reviews .container {
-    padding-bottom: 103px;
+    padding-bottom: 99px;
   }
 
   .reviews h2 {
@@ -5042,7 +5065,7 @@ button,
 
   .tariffs .container {
     margin-bottom: 0;
-    padding: 64px 15px 67px;
+    padding: 64px 15px 68px;
   }
 
   .tariffs h2 {
@@ -5075,7 +5098,7 @@ button,
   }
 
   .tariffs h3 {
-    margin-bottom: 10px;
+    margin-bottom: 9px;
     font-size: 22px;
     line-height: 24px;
   }
@@ -5103,7 +5126,7 @@ button,
   }
 
   .promo__container {
-    padding-top: 72px;
+    padding-top: 71px;
     padding-bottom: 50px;
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
@@ -5114,7 +5137,7 @@ button,
   }
 
   .coaches h2 {
-    margin-bottom: 42px;
+    margin-bottom: 41px;
     font-size: 32px;
     line-height: 38px;
   }
