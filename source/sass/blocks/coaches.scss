@@ -34,7 +34,7 @@
   }
 
   @media (max-width: $mobile-size-max) {
-    margin-bottom: 42px;
+    margin-bottom: 41px;
 
     font-size: 32px;
     line-height: 38px;
@@ -64,6 +64,17 @@
     width: calc(100% - 47px * 2);
     height: auto;
     margin: 0 auto;
+  }
+}
+
+.coaches .swiper-button {
+  &:hover,
+  &:focus {
+    color: $color-resolution-blue;
+  }
+
+  &:active {
+    color: $color-sapphire;
   }
 }
 

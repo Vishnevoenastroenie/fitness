@@ -82,7 +82,7 @@
 
   @media (max-width: $mobile-size-max) {
     margin-bottom: 0;
-    padding: 64px 15px 67px;
+    padding: 64px 15px 68px;
   }
 }
 
@@ -237,7 +237,7 @@
   text-align: center;
 
   @media (max-width: $mobile-size-max) {
-    margin-bottom: 10px;
+    margin-bottom: 9px;
 
     font-size: 22px;
     line-height: 24px;
@@ -264,7 +264,7 @@
 
 .tariffs__price span {
   position: relative;
-  bottom: 5px;
+  bottom: 18px;
   z-index: 0;
 
   max-width: 300px;

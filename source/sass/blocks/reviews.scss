@@ -4,7 +4,7 @@
   padding-bottom: 119px;
 
   @media (max-width: $tablet-size-max) {
-    padding-bottom: 103px;
+    padding-bottom: 99px;
   }
 
   @media (max-width: $mobile-size-max) {
@@ -73,6 +73,20 @@
   background-color: transparent;
   border: 0;
   cursor: pointer;
+
+  &:hover,
+  &:focus {
+    color: $color-resolution-blue;
+  }
+
+  &:active {
+    color: $color-sapphire;
+  }
+
+  &:disabled {
+    cursor: not-allowed;
+    opacity: 0.2;
+  }
 
   & svg {
     width: 20px;
