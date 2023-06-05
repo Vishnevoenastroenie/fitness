@@ -4983,6 +4983,8 @@ button,
 
   .header__content {
     width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
     -ms-grid-columns: 129px 1fr;
     grid-template-columns: 129px 1fr;
   }
@@ -5011,7 +5013,7 @@ button,
   }
 
   .header__btn {
-    min-width: 96%;
+    min-width: 99%;
     margin-top: 23px;
     text-align: center;
     -webkit-transform: translateX(1px);
@@ -5409,7 +5411,7 @@ button,
   }
 
   .form__container {
-    padding: 64px 15px 69px 15px;
+    padding: 64px 15px 68px 15px;
   }
 
   .form__input-wrapper {
@@ -5431,7 +5433,7 @@ button,
   }
 
   .contacts h2 {
-    margin: 0 0 33px;
+    margin: 0 0 34px;
     font-weight: 600;
     font-size: 32px;
     line-height: 38px;
@@ -5508,6 +5510,37 @@ button,
     -webkit-transform: none;
     -ms-transform: none;
     transform: none;
+  }
+}
+
+@media (max-width: 410px) {
+  .header__content {
+    -ms-grid-columns: 120px 1fr;
+    grid-template-columns: 120px 1fr;
+    justify-items: end;
+  }
+
+  .header__content ul {
+    min-width: 113px;
+    margin-top: 76px;
+    padding-top: 0;
+    padding-bottom: 0;
+    -webkit-transform: translateX(6px);
+    -ms-transform: translateX(6px);
+    transform: translateX(6px);
+  }
+
+  .header__content h1,
+  .header__content span {
+    -webkit-transform: translateX(8px);
+    -ms-transform: translateX(8px);
+    transform: translateX(8px);
+  }
+
+  .header__btn {
+    -webkit-transform: translateX(10px);
+    -ms-transform: translateX(10px);
+    transform: translateX(10px);
   }
 }
 
