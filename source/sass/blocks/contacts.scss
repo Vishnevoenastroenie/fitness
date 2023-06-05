@@ -140,6 +140,23 @@
   }
 }
 
+.contacts__container a {
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    color: $color-resolution-blue;
+
+    opacity: 0.6;
+  }
+
+  &:active {
+    color: $color-resolution-blue;
+
+    opacity: 0.3;
+  }
+}
+
 .contacts__container p {
   @media (max-width: $tablet-size-max) {
     margin-left: -5px;
