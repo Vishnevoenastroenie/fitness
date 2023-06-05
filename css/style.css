@@ -2830,8 +2830,7 @@ button,
   -ms-flex-align: center;
   align-items: center;
   max-width: 300px;
-  margin: 0;
-  margin-top: 58px;
+  margin: 58px 0 15px;
   font-weight: 700;
   font-size: 60px;
   line-height: 100%;
@@ -3315,14 +3314,15 @@ button,
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
   max-width: 240px;
-  height: 307px;
-  margin-top: 55px;
-  margin-left: 55px;
-  padding-top: 50px;
+  margin: 55px 0 7px 54px;
+  padding: 45px 30px 55px;
   color: #ffffff;
   background-color: #1c3374;
   -ms-grid-column: 2;
@@ -3435,7 +3435,7 @@ button,
 }
 
 .advantages__description--central p {
-  padding: 0 10px;
+  padding: 0 26px;
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
@@ -3506,6 +3506,7 @@ button,
 
 .promotions__main-description span {
   display: block;
+  margin-bottom: 28px;
   font-size: 18px;
   line-height: 25px;
 }
@@ -3947,6 +3948,21 @@ button,
   margin: 0;
   font-size: 14px;
   line-height: 21px;
+}
+
+.contacts__container a {
+  cursor: pointer;
+}
+
+.contacts__container a:hover,
+.contacts__container a:focus {
+  color: #1c3374;
+  opacity: 0.6;
+}
+
+.contacts__container a:active {
+  color: #1c3374;
+  opacity: 0.3;
 }
 
 .footer {
@@ -4522,9 +4538,8 @@ button,
   .advantages__item--central {
     min-width: 442px;
     height: auto;
-    margin: 44px auto 42px;
-    padding-top: 33px;
-    padding-bottom: 36px;
+    margin: 43px auto 45px;
+    padding: 35px 125px 36px;
     grid-column: 1/-1;
     -ms-grid-row: 2;
     -ms-grid-row-span: 1;
@@ -4627,10 +4642,6 @@ button,
 
   .promotions__main-description {
     padding-bottom: 42px;
-  }
-
-  .promotions__main-description {
-    padding-bottom: 45px;
   }
 
   .promotions__list {
@@ -5177,11 +5188,8 @@ button,
     width: 100%;
     min-width: auto;
     max-width: none;
-    margin: 0;
-    margin-top: 6px;
-    margin-bottom: 45px;
-    padding-top: 41px;
-    padding-bottom: 45px;
+    margin: 3px 0 4px;
+    padding: 37px 0 42px;
   }
 
   .advantages__item:nth-child(2n+3) {
@@ -5247,10 +5255,6 @@ button,
 
   .promotions__main-description b {
     margin-bottom: 0;
-  }
-
-  .promotions__main-description span {
-    margin-bottom: 28px;
   }
 
   .promotions__list {
