@@ -4566,7 +4566,7 @@ button,
 }
 @media (max-width: 767px) {
   .reviews__swiper {
-    width: calc(100% - 94px);
+    width: calc(100% - 100px);
   }
 }
 
