@@ -5355,7 +5355,7 @@ button,
   }
 
   .reviews__swiper {
-    width: calc(100% - 94px);
+    width: calc(100% - 100px);
   }
 
   .reviews .swiper-button {
